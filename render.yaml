@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: food-order-manager-api
+    env: node
+    rootDirectory: backend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+
